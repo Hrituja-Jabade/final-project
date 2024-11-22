@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t-Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        section {
+            height: 100vh;
+            width: 100vw;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .n1 {
+            height: 20vh;
+            width: 100vw;
+            background-color: rgb(129, 94, 18);
+            display: flex;
+            /* position: fixed; */
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+            border: 0.7px solid gray;
+
+        }
+
+        .n2 {
+            height: 10vh;
+            width: 100vw;
+            background-color: white;
+            display: flex;
+            /* position: fixed; */
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+            /* border: 2px solid black; */
+        }
+
+        .n1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .n2 a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .n1 a img {
+            height: 40px;
+            width: 60px;
+            border-radius: 60px;
+            /* margin-top: 20px;
+            padding-top: 20px; */
+        }
+
+        .login {
+            height: 60px;
+            width: 100%;
+           
+
+
+            /* border: 2px solid black; */
+            background-image: linear-gradient(to right, rgb(88, 4, 4), rgb(124, 60, 35));
+          
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* margin-right: 20px; */
+            text-align: left;
+        }
+
+        .open {
+            height: 60vh;
+            width: 100%;
+            /* border: 2px solid black; */
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+            background-image: url('https://assets.vogue.in/photos/64f1d7a98d0bf43267dd5d9b/16:9/w_3648,h_2052,c_limit/Kiara%20Advani,%20Kareena%20Kapoor%20Khan,%20and%20Suhana%20Khan%20at%20the%20launch%20of%20Tiras%20campaign%20#ForEveryYou.JPG');
+        }
+        .n1 div{
+            height: 50px;
+            width: 30%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-around;
+
+            align-items: center;
+            background-color: rgb(238, 233, 233);
+            border-radius: 5px;
+        }
+        .n1 i{
+            color: grey;
+        }
+
+        input {
+            height: 100%;
+            width: 90%;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        
+
+
+        .open img {
+            height: 80vh;
+            width: 100%;
+        }
+
+        .open button {
+            color: black;
+            background-color: white;
+            height: 50px;
+            width: 40px;
+        }
+
+        .login button {
+            height: 50px;
+            width: 80px;
+            margin-right: 20px;
+            border: none;
+            background-color: rgb(124, 60, 35);
+        }
+
+
+        .second {
+            height: 100vh;
+            width: 100vw;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction:row;
+            gap: 20px;
+            background-color:rgb(221, 245, 255);
+
+        }
+
+        .second div {
+            height: 60%;
+            width: 45%;
+            /* border: 2px solid black; */
+           
+
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .logindiv {
+            height: 100px;
+            width: 100px;
+        }
+
+        .login h1 {
+            display: flex;
+            text-align: left;
+            color: white;
+        }
+        .second h1{
+            font-size: 20px;
+            color: black;
+        }
+        .third{
+            height: 100vh;
+            width: 100vw;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+            background-color:rgb(221, 245, 255);
+
+        }
+        .third div{
+            height: 70%;
+            width: 25%;
+            /* border: 2px solid black; */
+        }
+        .third img{
+            height: 100%;
+            width: 100%;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <section class="first">
+
+        <nav class="n1">
+            <a href=""><img
+                    src="https://img.freepik.com/premium-vector/letter-t-beauty-salon-logo-design_1024563-20.jpg?semt=ais_hybrid"
+                    alt=""></a>
+            <a href="">Brand</a>
+            <a href="">t-Beauty Red</a>
+            <a href="">Offeres</a>
+            <a href="">Top shelf</a>
+            <div>
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                 <input type="text" id="Add text" placeholder="Search">
+
+
+            </div>
+
+
+
+            <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href=""><i class="fa-regular fa-user"></i></a>
+        </nav>
+        <nav class="n2">
+            <a href="">Whats New</a>
+            <a href="">Makeup</a>
+            <a href="">Skin</a>
+            <a href="">Hair</a>
+            <a href="">Fragrance</a>
+            <a href="">Men</a>
+            <a href="">Bath & Body</a>
+            <a href="">Tools & Appliances</a>
+            <a href="">Mom & Baby</a>
+            <a href="">Minis</a>
+            <a href="">Homegrown</a>
+        </nav>
+        <div class="login">
+            <h1>T B E A U T Y  |  Login & Explore wide variety of rewards</h1>
+            <button onclick="login()">Login >
+                <div class="logindiv">
+
+                </div>
+            </button>
+        </div>
+        <main class="open">
+
+
+        </main>
+    </section>
+    <section class="second">
+       
+        <div>
+            <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/company/1/applications/62d53777f5ad942d3e505f77/theme/pictures/free/original/theme-image-1732011786295.jpeg"
+                alt="">
+            <h1></h1>
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/originals/46/87/5b/46875bb083632fb4904156ef61cc60b8.jpg" alt="">
+        </div>
+    </section>
+    <section class="third">
+        <div>
+            <img src="https://images.mamaearth.in/catalog/product/1/0/10_3_1.jpg?format=auto&height=600" alt="">
+        </div>
+        <div>
+            <img src="https://images.squarespace-cdn.com/content/v1/51d151b1e4b05d425c859fc9/1604971475054-IXSKETCNTE38LZ1MZLJL/DSC04906.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/61hnZknjl2S._AC_UF350,350_QL80_.jpg" alt="">
+        </div>
+        
+    </section>
+
+
+</body>
+
+</html>
